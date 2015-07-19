@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: db/production.postgresql
+  database: receta_production
   pool: 5
-  username: test_postgre
+  username: rebekahchang
   password:
