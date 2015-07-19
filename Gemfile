@@ -26,6 +26,7 @@ gem 'sass', '3.2.19'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
+  gem "rspec"
   gem "factory_girl_rails", "~> 4.0"
   gem "capybara"
   gem "database_cleaner"
@@ -35,6 +36,14 @@ end
 group :doc do
    # bundle exec rake doc:rails generates the API under doc/api.
    gem 'sdoc', require: false
+end
+
+gem "foreman"
+
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
