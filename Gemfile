@@ -13,7 +13,7 @@ gem 'bower-rails'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -44,6 +44,7 @@ group :production, :staging do
   gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
+  gem 'pg', '0.12.2'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
