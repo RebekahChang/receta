@@ -44,7 +44,6 @@ group :production, :staging do
   gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
-  gem 'pg', '0.12.2'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
